@@ -42,12 +42,8 @@ setup(
     packages=find_packages(exclude=["tests*"]),
     include_package_data=True,
     python_requires=">=3.7",
-    install_requires=["tutor>=13.0.0,<14.0.0", "tutor-discovery>=13.0.0,<14.0.0", "tutor-mfe>=13.0.0,<14.0.0"],
-    entry_points={
-        "tutor.plugin.v1": [
-            "ecommerce = tutorecommerce.plugin"
-        ]
-    },
+    install_requires=["tutor>=14.0.0,<15.0.0", "tutor-discovery>=14.0.0,<15.0.0", "tutor-mfe>=14.0.0,<15.0.0"],
+    entry_points={"tutor.plugin.v1": ["ecommerce = tutorecommerce.plugin"]},
     classifiers=[
         "Development Status :: 3 - Alpha",
         "Intended Audience :: Developers",
